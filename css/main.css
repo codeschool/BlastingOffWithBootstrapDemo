@@ -1,0 +1,77 @@
+/*
+ *= require bootstrap/dist/css/bootstrap.min.css
+ *= require_self
+ */
+
+
+.features .glyphicon {
+  font-size: 32px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.quote {
+  background-color: #444;
+  color: #e1e1e1;
+}
+.quote blockquote {
+  border: none;
+  margin: 0;
+}
+.quote footer {
+  color: #c1c1c1;
+}
+section, header {
+  background-color: #fff;
+}
+body {
+
+}
+.footer {
+  padding: 20px 0;
+}
+
+
+#demo-nav {
+  display: none;
+}
+
+.show-nav #demo-nav {
+  display: block;
+}
+
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+}
+.footer {
+  color: #efefef;
+  background-color: #333;
+}
+.footer a {
+  color: #9af7fe;
+}
+@media only screen and (max-width: 768px) {
+  body { margin-bottom: 400px; }
+  .footer { height: 400px; }
+}
