@@ -1,61 +1,14 @@
-/*
- *= require bootstrap/dist/css/bootstrap.min.css
- *= require_self
- */
-
-
-.features .glyphicon {
-  font-size: 32px;
-}
-
-.row {
-  margin-bottom: 20px;
-}
-
-.quote {
-  background-color: #444;
-  color: #e1e1e1;
-}
-.quote blockquote {
-  border: none;
-  margin: 0;
-}
-.quote footer {
-  color: #c1c1c1;
-}
-section, header {
-  background-color: #fff;
-}
-body {
-
-}
-.footer {
-  padding: 20px 0;
-}
-
-
-#demo-nav {
-  display: none;
-}
-
-.show-nav #demo-nav {
-  display: block;
-}
-
-
-
-
-
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
+  border-top: 3px solid #333;
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 200px;
+  font-family: 'Open Sans', sans-serif;
 }
 .footer {
   position: absolute;
@@ -63,15 +16,98 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 200px;
-}
-.footer {
-  color: #efefef;
   background-color: #333;
-}
-.footer a {
-  color: #9af7fe;
+  color: #efefef;
+  padding: 20px 0;
 }
 @media only screen and (max-width: 768px) {
   body { margin-bottom: 400px; }
   .footer { height: 400px; }
+}
+
+
+/* Core Bootstrap */
+.container {
+  max-width: 960px; 
+}
+.row {
+  margin-bottom: 20px;
+}
+.well {
+  background-color: transparent;
+}
+
+
+/* General */
+.list-divided {
+  margin-bottom: 1em;
+}
+.list-divided li {
+  border-right: 1px solid #ddd;
+}
+.list-divided li:last-child {
+  border-right: none;
+}
+
+
+/* Core Site */
+/** Navigation **/
+.navbar {
+  background-color: rgb(51, 122, 183);
+}
+.navbar a {
+  color: #f0f0f0;
+}
+.navbar a:hover {
+  color: #cbc7c7;
+}
+.navbar .nav a:hover {
+  background-color: rgb(112, 171, 221);
+  color: #fff;
+}
+.navbar .navbar-toggle .icon-bar {
+  background-color: #f0f0f0;
+}
+
+
+/* index.html */
+.features .glyphicon {
+  font-size: 32px;
+}
+
+
+/* about.html */
+.about .fa-rocket {
+  font-size: 32px;
+  color: #444;
+}
+
+/** posts specific **/
+.posts {
+  margin-bottom: 20px;
+}
+.posts .post {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+.posts .post:last-child {
+  border-bottom: none;
+}
+
+/** Post Specific **/
+.post h1 a {
+  color: #555;
+  font-weight: bold;
+}
+.post .meta {
+  color: #777;
+  font-size: 14px
+}
+.post .meta .glyphicon-tags {
+  padding-right: .5em;
+}
+
+.post .post-content {
+  font-size: 17px;
+  line-height: 24px;
 }
