@@ -3,11 +3,10 @@
 html {
   position: relative;
   min-height: 100%;
-  border-top: 3px solid #333;
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 200px;
+  margin-bottom: 220px;
   font-family: 'Open Sans', sans-serif;
 }
 .footer {
@@ -15,10 +14,10 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 200px;
+  height: 220px;
   background-color: #333;
   color: #efefef;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 @media only screen and (max-width: 768px) {
   body { margin-bottom: 400px; }
@@ -36,9 +35,14 @@ body {
 .well {
   background-color: transparent;
 }
-
+.lead {
+  color: #555;
+}
 
 /* General */
+a:hover {
+  text-decoration: underline;
+}
 .list-divided {
   margin-bottom: 1em;
 }
@@ -48,6 +52,10 @@ body {
 .list-divided li:last-child {
   border-right: none;
 }
+.btn-lg {
+  padding: 14px 20px;
+  margin-right: 20px
+}
 
 
 /* Core Site */
@@ -56,13 +64,16 @@ body {
   background-color: rgb(51, 122, 183);
 }
 .navbar a {
-  color: #f0f0f0;
+  color: #d8e6f3;
 }
 .navbar a:hover {
-  color: #cbc7c7;
+  color: #fff;
 }
-.navbar .nav a:hover {
-  background-color: rgb(112, 171, 221);
+.navbar .nav a:hover, 
+.navbar .nav .open > a,
+.navbar .nav a.active,
+.navbar .nav a:focus {
+  background-color: #204d74;
   color: #fff;
 }
 .navbar .navbar-toggle .icon-bar {
@@ -78,7 +89,7 @@ body {
 
 /* about.html */
 .about .fa-rocket {
-  font-size: 32px;
+  font-size: 64px;
   color: #444;
 }
 
@@ -96,7 +107,7 @@ body {
 
 /** Post Specific **/
 .post h1 a {
-  color: #555;
+  color: #333;
   font-weight: bold;
 }
 .post .meta {
@@ -110,4 +121,12 @@ body {
 .post .post-content {
   font-size: 17px;
   line-height: 24px;
+}
+
+/** Footer **/
+.footer a {
+  color: #639bcf;
+}
+.footer a:hover {
+  color: #d8e6f3;
 }
